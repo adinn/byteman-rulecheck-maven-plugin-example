@@ -2,15 +2,15 @@ package org.my;
 
 class MyClass
 {
-  boolean flip = true;
+  boolean flip = false;
   boolean myMethod(int value)
   {
-    boolean result = myOtherMethod(2 * value + (flip ? 1 : 0));
+    boolean result = myOddMethod(2 * value + (flip ? 1 : 0));
     return result;
   }
 
-  boolean myOtherMethod(int oddOrEven)
+  boolean myOddMethod(int oddOrEven)
   {
-      return ((oddOrEven & 1) == 0);
+      return ((oddOrEven & 1) == 1);
   }
 }

@@ -2,21 +2,21 @@ package org.my;
 
 class MyClass
 {
-  boolean flip = true;
+  boolean flip = false;
   boolean myMethod(int value)
   {
     flip = !flip;
     boolean result;
     if (flip) {
-        result = myOtherMethod(2 * value + 1);
+        result = myOddMethod(2 * value + 1);
     } else {
-        result = myOtherMethod(2 * value);
+        result = myOddMethod(2 * value);
     }
     return result;
   }
 
-  boolean myOtherMethod(int oddOrEven)
+  boolean myOddMethod(int oddOrEven)
   {
-      return ((oddOrEven & 1) == 0);
+      return ((oddOrEven & 1) == 1);
   }
 }
