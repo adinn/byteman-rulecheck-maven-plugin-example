@@ -76,13 +76,14 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
+                <!--
                 <configuration>
                     <systemPropertyVariables>
                         <org.jboss.byteman.verbose>true</org.jboss.byteman.verbose>
                         <org.jboss.byteman.contrib.bmunit.verbose>true</org.jboss.byteman.contrib.bmunit.verbose>
                     </systemPropertyVariables>
-                    <debugForkedProcess>true</debugForkedProcess>
                 </configuration>
+                -->
             </plugin>
         </plugins>
     </build>
