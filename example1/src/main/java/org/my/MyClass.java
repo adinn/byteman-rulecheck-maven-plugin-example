@@ -7,7 +7,6 @@ class MyClass
   {
     flip = !flip;
     boolean result;
-    System.out.println("flip : " + flip);
     if (flip) {
         result = myOddMethod(2 * value);
     } else {
@@ -18,7 +17,6 @@ class MyClass
 
   boolean myOddMethod(int oddOrEven)
   {
-      System.out.println("oddOrEven & 1 == " + (oddOrEven & 1));
       return ((oddOrEven & 1) == 1);
   }
 }
